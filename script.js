@@ -212,10 +212,9 @@ async function streamAIResponse(text) {
     let fullResponse = "";
 
     try {
-        const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+const response = await fetch("https://priora-proxy.yourname.workers.dev/api/chat", {
             method: "POST",
             headers: {
-                "Authorization": `Bearer ${OPENROUTER_KEY}`,
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
