@@ -11,7 +11,7 @@ function generateQR() {
   new QRCode(document.getElementById("qrcode"), {
     text: text,
     width: 200,
-    height: 200
+    height: 201
   });
 }
 
